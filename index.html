@@ -229,6 +229,169 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/19/三种排序算法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小庆">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xiaoqing的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/19/三种排序算法/" itemprop="url">三种排序算法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-19T21:26:33+08:00">
+                2018-05-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>                                 冒泡排序算法
+  关键代码如下:
+
+for(int i=0;i&lt;arr.length;i++){
+    for(int j=0;j&lt;arr.length-1-i;j++){
+        if(arr[j]&gt;arr[j+1]){
+          int temp=arr[j];
+          arr[j]=arr[j+1];
+          arr[j+1]=temp;
+        }
+    }
+}
+
+                                选择排序算法
+  关键代码如下：
+
+for(int i=0;i&lt;arr.length;i++){
+      for(int j=i+1;j&lt;arr.length;j++){
+            if(arr[i]&gt;arr[j]){
+                int temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+      }
+}         
+
+
+                                直接插入算法
+
+  关键代码如下:
+
+ for(int i=1;i&lt;arr.length;i++){
+
+      int j=i-1; //无序的坐标
+      temp=arr[i];//保存即将插入的元素
+      while(j&gt;=0 &amp;&amp; temp&lt;arr[j]){ 
+
+          arr[j+1]=arr[j];;//如果满足条件，有序序列往后移动一位
+          j--;
+      }
+
+      arr[j+1]=temp;//在插入的位置插入元素
+
+ }
+</code></pre>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/17/firstblog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -510,7 +673,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
