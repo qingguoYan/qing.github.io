@@ -229,7 +229,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/21/js小总结/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/21/js总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小庆">
@@ -248,7 +248,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/05/21/js小总结/" itemprop="url">js小总结</a></h1>
+                <a class="post-title-link" href="/2018/05/21/js总结/" itemprop="url">js总结</a></h1>
         
 
         <div class="post-meta">
@@ -260,7 +260,7 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-21T00:20:32+08:00">
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-21T20:59:19+08:00">
                 2018-05-21
               </time>
             
@@ -304,10 +304,146 @@
 <p></p><p onclick=" ;"><br>2.head定义<script>标签<br>function f2(){</p>
 <p>}</p>
 <p>调用: onclick=”f2();”</p>
+<p>ok</p>
 <p>3.文件调用式:写一个js文件，使用时引入到网页上就好<br>注意:该标签必须写成双标签，不能在标签里即引入js又写js</p>
 <script src="my.js"></script>
 
 </p><p>my.js含有函数f3()<br>使用&lt;onclick=”f(3);”&gt;</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/21/eclipse访问不到tomcat原因/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小庆">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="xiaoqing的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/05/21/eclipse访问不到tomcat原因/" itemprop="url">eclipse访问不到tomcat原因</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-21T20:49:42+08:00">
+                2018-05-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <pre><code>症状：
+</code></pre><p>tomcat在eclipse里面能正常启动，而在浏览器中访问<a href="http://localhost:8080/不能访问，且报404错误。同时其他项目页面也不能访问。" target="_blank" rel="noopener">http://localhost:8080/不能访问，且报404错误。同时其他项目页面也不能访问。</a></p>
+<p>关闭eclipse里面的tomcat，在tomcat安装目录下双击startup.bat手动启动tomcat服务器。访问htt://localhost:8080/能正常访问tomcat管理页面。</p>
+<p>症状原因：</p>
+<pre><code>eclipse将tomcat的项目发布目录（tomcat 目录中的webapp）重定向了,所以你会发现在tomcat安装目录下的webapp目录里面找不到你的项目文件。
+
+解决办法：
+</code></pre><p>重新配置下tomcat服务器：</p>
+<p>在eclipse中的server页面，双击tomcat服务，会看到如图所示的配置页面：</p>
+<p>可以看到红圈中选择的是 Use workspace metadata(does not modify Tomcat installion)</p>
+<p>如果该tomcat中部署了项目的话，这红圈中的选项会灰掉不能修改，要修改必须得先把tomcat中的部署的服务都移除。</p>
+<p>如图：</p>
+<p>通过右键单击tomcat服务器选择 Add and Remove，在弹出的对话框中移除已部署的项目。移除完确定后，将看到上面的选项面板部分可编辑了。</p>
+<p>选择Use tomcat installation(Task control of Tomcat installation) 即选择tomcat的安装目录来作为项目的发布目录。</p>
+<p>然后,下来四行,看到”Deploy Path”了没?它后面的值默认是”wtpwebapps”,把它改成”webapps”,也就是 tomcat</p>
+<p>中发布项目所在的文件夹名字。<br>修改后关掉该页面，保存配置。这样就将项目部署到了tomcat安装目录下的webapp<br>重启tomcat服务器，访问<a href="http://localhost:8080则能正常访问了，自己部署的项目也能正常访问了。" target="_blank" rel="noopener">http://localhost:8080则能正常访问了，自己部署的项目也能正常访问了。</a></p>
 
           
         
@@ -429,8 +565,7 @@
           
             <pre><code>css三种样式
 </code></pre><p>1.内联式:在元素中直接写style<br>2.内部式:</p>
-<p><head></head></p>
-<p><style><br>     h2 {<br>     ….<br>       }<br></style><br><br>3.外部式<br>创建.css文件，可以复用<br>head标签中写<link rel="stylesheet" href="你要引用的css文件"></p>
+<p><style><br>    h{<br>        …<br>    }<br></style><br>3.外部式<br>创建.css文件，可以复用<br>head标签中写<link rel="stylesheet" href="你要引用的css文件"></p>
 <p>4.元素选择器:通过元素名字选择作用的目标</p>
 <p>5.类选择器:元素的class属性<br>例如<br>css代码: .test{ color:blue}<br>HTML代码: </p><h2 class="test"><p></p>
 <p>6.id选择器: 选择id=某值的唯一的元素</p>
@@ -445,6 +580,15 @@
 <p id="p4"></p>
 
 <p>他俩都会被加粗</p>
+<p>js定义方式<br>1.事件定义式:定义事件时直接写js</p>
+<p></p><p onclick=" ;"><br>2.head定义<script>标签<br>function f2(){</p>
+<p>}</p>
+<p>调用: onclick=”f2();”</p>
+<p>ok</p>
+<p>3.文件调用式:写一个js文件，使用时引入到网页上就好<br>注意:该标签必须写成双标签，不能在标签里即引入js又写js</p>
+<script src="my.js"></script>
+
+</p><p>my.js含有函数f3()<br>使用&lt;onclick=”f(3);”&gt;</p>
 </h2>
           
         
@@ -1109,7 +1253,7 @@ for(int i=0;i&lt;arr.length;i++){
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

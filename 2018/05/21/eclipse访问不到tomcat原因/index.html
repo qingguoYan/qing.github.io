@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="总体步骤:            一.环境准备            1.下载git            2.下载NodeJs            3.hexo--------执行以下命令完成hexo的安装                3.1 npm install hexo-cli -g               3.2 npm install hexo-deployer-git">
+<meta name="description" content="症状： tomcat在eclipse里面能正常启动，而在浏览器中访问http://localhost:8080/不能访问，且报404错误。同时其他项目页面也不能访问。 关闭eclipse里面的tomcat，在tomcat安装目录下双击startup.bat手动启动tomcat服务器。访问htt://localhost:8080/能正常访问tomcat管理页面。 症状原因： eclipse将tomc">
 <meta property="og:type" content="article">
-<meta property="og:title" content="搭建属于自己的博客">
-<meta property="og:url" content="http://yoursite.com/2018/05/19/搭建属于自己的博客/index.html">
+<meta property="og:title" content="eclipse访问不到tomcat原因">
+<meta property="og:url" content="http://yoursite.com/2018/05/21/eclipse访问不到tomcat原因/index.html">
 <meta property="og:site_name" content="xiaoqing的个人博客">
-<meta property="og:description" content="总体步骤:            一.环境准备            1.下载git            2.下载NodeJs            3.hexo--------执行以下命令完成hexo的安装                3.1 npm install hexo-cli -g               3.2 npm install hexo-deployer-git">
+<meta property="og:description" content="症状： tomcat在eclipse里面能正常启动，而在浏览器中访问http://localhost:8080/不能访问，且报404错误。同时其他项目页面也不能访问。 关闭eclipse里面的tomcat，在tomcat安装目录下双击startup.bat手动启动tomcat服务器。访问htt://localhost:8080/能正常访问tomcat管理页面。 症状原因： eclipse将tomc">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-19T14:53:18.314Z">
+<meta property="og:updated_time" content="2018-05-21T12:52:08.306Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="搭建属于自己的博客">
-<meta name="twitter:description" content="总体步骤:            一.环境准备            1.下载git            2.下载NodeJs            3.hexo--------执行以下命令完成hexo的安装                3.1 npm install hexo-cli -g               3.2 npm install hexo-deployer-git">
+<meta name="twitter:title" content="eclipse访问不到tomcat原因">
+<meta name="twitter:description" content="症状： tomcat在eclipse里面能正常启动，而在浏览器中访问http://localhost:8080/不能访问，且报404错误。同时其他项目页面也不能访问。 关闭eclipse里面的tomcat，在tomcat安装目录下双击startup.bat手动启动tomcat服务器。访问htt://localhost:8080/能正常访问tomcat管理页面。 症状原因： eclipse将tomc">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/19/搭建属于自己的博客/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/21/eclipse访问不到tomcat原因/"/>
 
 
 
 
 
-  <title>搭建属于自己的博客 | xiaoqing的个人博客</title>
+  <title>eclipse访问不到tomcat原因 | xiaoqing的个人博客</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/19/搭建属于自己的博客/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/21/eclipse访问不到tomcat原因/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小庆">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">搭建属于自己的博客</h1>
+          <h1 class="post-title" itemprop="name headline">eclipse访问不到tomcat原因</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-19T22:20:28+08:00">
-                2018-05-19
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-21T20:49:42+08:00">
+                2018-05-21
               </time>
             
 
@@ -299,60 +299,23 @@
       
 
       
-        <pre><code>总体步骤:
-           一.环境准备
-           1.下载git
-           2.下载NodeJs
-           3.hexo--------执行以下命令完成hexo的安装
+        <pre><code>症状：
+</code></pre><p>tomcat在eclipse里面能正常启动，而在浏览器中访问<a href="http://localhost:8080/不能访问，且报404错误。同时其他项目页面也不能访问。" target="_blank" rel="noopener">http://localhost:8080/不能访问，且报404错误。同时其他项目页面也不能访问。</a></p>
+<p>关闭eclipse里面的tomcat，在tomcat安装目录下双击startup.bat手动启动tomcat服务器。访问htt://localhost:8080/能正常访问tomcat管理页面。</p>
+<p>症状原因：</p>
+<pre><code>eclipse将tomcat的项目发布目录（tomcat 目录中的webapp）重定向了,所以你会发现在tomcat安装目录下的webapp目录里面找不到你的项目文件。
 
-              3.1 npm install hexo-cli -g
-              3.2 npm install hexo-deployer-git
-              3.3 npm install hexo-generator-feed
-              3.4 npm install hexo-generator-index
-              3.5 npm install hexo-generator-archive
-              3.6 npm install hexo-generator-tag
-              3.7 npm install hexo-generator-category
-              3.8 npm install hexo-generator-sitemap
-              3.9 npm install hexo-generator -baidu-sitemap
-            二.初始化博客
+解决办法：
+</code></pre><p>重新配置下tomcat服务器：</p>
+<p>在eclipse中的server页面，双击tomcat服务，会看到如图所示的配置页面：</p>
+<p>可以看到红圈中选择的是 Use workspace metadata(does not modify Tomcat installion)</p>
+<p>如果该tomcat中部署了项目的话，这红圈中的选项会灰掉不能修改，要修改必须得先把tomcat中的部署的服务都移除。</p>
+<p>如图：</p>
+<p>通过右键单击tomcat服务器选择 Add and Remove，在弹出的对话框中移除已部署的项目。移除完确定后，将看到上面的选项面板部分可编辑了。</p>
+<p>选择Use tomcat installation(Task control of Tomcat installation) 即选择tomcat的安装目录来作为项目的发布目录。</p>
+<p>然后,下来四行,看到”Deploy Path”了没?它后面的值默认是”wtpwebapps”,把它改成”webapps”,也就是 tomcat</p>
+<p>中发布项目所在的文件夹名字。<br>修改后关掉该页面，保存配置。这样就将项目部署到了tomcat安装目录下的webapp<br>重启tomcat服务器，访问<a href="http://localhost:8080则能正常访问了，自己部署的项目也能正常访问了。" target="_blank" rel="noopener">http://localhost:8080则能正常访问了，自己部署的项目也能正常访问了。</a></p>
 
-            1.创建一个文件夹myblog,并cd到此文件夹
-            2.执行命令hexo init
-            3.npm install
-            三.配置博客
-
-            打开根目录下_config.yml文件
-            可以参考网上数据进行修改
-            注意:每一个冒号后面都要有一个空格，否则配置不会起作用
-            更换主题需要更改theme参数配置
-
-            四.创建博文
-            hexo new &quot;（你的博文名字）&quot;
-            hexo s 启动hexo服务
-            浏览器输入提示的网址即可进入博客
-
-            五关联github
-            如果想把博文同步到GitHub上,首先申请一个github账号，然后添加sshKey
-            在git上执行 ssh-keygen -t -rsa -C &quot;你的邮箱&quot;
-
-            复制你的密匙在github的Setting中添加你的sshKeys
-
-            最后新建一个Repository,命名为 qingxiaoYan.github.io
-
-            最最后在_config.yml文件里配置deploy信息
-             deploy:
-                 type: git
-                 repository: git@github.com: &quot;qingxiaoYan/qing.github.io.git&quot;
-                 branch: master
-
-
-
-            六.执行 hexo clean
-                    hexo g
-                    hexo d
-
-               ok！！！
-</code></pre>
       
     </div>
     
@@ -376,8 +339,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/05/19/三种排序算法/" rel="next" title="三种排序算法">
-                <i class="fa fa-chevron-left"></i> 三种排序算法
+              <a href="/2018/05/20/css层叠样式表知识总结/" rel="next" title="css层叠样式表知识总结">
+                <i class="fa fa-chevron-left"></i> css层叠样式表知识总结
               </a>
             
           </div>
@@ -386,8 +349,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/05/20/css层叠样式表知识总结/" rel="prev" title="css层叠样式表知识总结">
-                css层叠样式表知识总结 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/05/21/js总结/" rel="prev" title="js总结">
+                js总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
