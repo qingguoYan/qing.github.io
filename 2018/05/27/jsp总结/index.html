@@ -79,17 +79,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="jsp语法       1.脚本程序&amp;lt;% %&amp;gt;       2.jsp声明&amp;lt;%!  %&amp;gt;       3.jsp表达式&amp;lt;%= %&amp;gt;          jsp生命周期 用户从客户端发送一个http请求,服务器端判断出来是一个jsp请求,这是服务器端的jsp容器接受jsp文件并将jsp文件转化为servlet文件,然后servelt容器得">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2018/05/17/hello-world/index.html">
+<meta property="og:title" content="jsp总结">
+<meta property="og:url" content="http://yoursite.com/2018/05/27/jsp总结/index.html">
 <meta property="og:site_name" content="xiaoqing的个人博客">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="jsp语法       1.脚本程序&amp;lt;% %&amp;gt;       2.jsp声明&amp;lt;%!  %&amp;gt;       3.jsp表达式&amp;lt;%= %&amp;gt;          jsp生命周期 用户从客户端发送一个http请求,服务器端判断出来是一个jsp请求,这是服务器端的jsp容器接受jsp文件并将jsp文件转化为servlet文件,然后servelt容器得">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-05-16T17:38:47.980Z">
+<meta property="og:updated_time" content="2018-05-28T09:55:38.008Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="jsp总结">
+<meta name="twitter:description" content="jsp语法       1.脚本程序&amp;lt;% %&amp;gt;       2.jsp声明&amp;lt;%!  %&amp;gt;       3.jsp表达式&amp;lt;%= %&amp;gt;          jsp生命周期 用户从客户端发送一个http请求,服务器端判断出来是一个jsp请求,这是服务器端的jsp容器接受jsp文件并将jsp文件转化为servlet文件,然后servelt容器得">
 
 
 
@@ -119,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/05/17/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/05/27/jsp总结/"/>
 
 
 
 
 
-  <title>Hello World | xiaoqing的个人博客</title>
+  <title>jsp总结 | xiaoqing的个人博客</title>
   
 
 
@@ -232,7 +232,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/17/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/05/27/jsp总结/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="小庆">
@@ -249,7 +249,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">jsp总结</h1>
         
 
         <div class="post-meta">
@@ -261,8 +261,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-17T01:38:47+08:00">
-                2018-05-17
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-27T18:37:28+08:00">
+                2018-05-27
               </time>
             
 
@@ -299,16 +299,65 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <pre><code>              jsp语法
+      1.脚本程序&lt;% %&gt;
+      2.jsp声明&lt;%!  %&gt;
+      3.jsp表达式&lt;%= %&gt;
 
+
+
+      jsp生命周期
+用户从客户端发送一个http请求,服务器端判断出来是一个jsp请求,这是服务器端的jsp容器接受jsp文件并将jsp文件转化为servlet文件,然后servelt容器得到转化的servlet文件,编译执行servlet文件,执行结果是一个HTML格式的输出并将其内嵌于http response中上交给服务器，服务器以静态HTML形式
+将结果传给浏览器，浏览器将处理HTTP response中动态产生的HTML网页。
+
+ 总的来说jsp生命周期比servlet多了一个阶段，就是将jsp文件转换为servlet文件。然后初始化、执行、终结。
+
+
+              jsp指令
+        1.&lt;%@page %&gt;page指令为容器提供当前页面的使用说明，一个页面可以有多个page指令
+        常用指令:
+        language=&quot;java&quot;
+        import=&quot;&quot;
+        contentType=&quot;text/html;charset=UTF-8&quot;  
+        pageEncoding=&quot;UTF-8&quot;
+
+        //charset是服务器发送给客户端时的编码，pageEncoding是jsp文件本身的编码。 jsp页面------&gt;java文件(pageEncoding)
+         java文件--------&gt;.class文件(JVM)
+         .class文件------&gt;客户端HTML(contentType)
+        2.&lt;%@include %&gt;
+        3.&lt;%@taglib %&gt;
+        自定义标签库以及自定义标签的前缀，需要导入standard.jar和jsp-api.jar两个包
+        uri=&quot;&quot;
+        prefix=&quot;&quot;
+        prefix是标签库的别名
+
+                     jsp的动作元素
+           作用:动态的插入一些文件等,与jsp指令不同的是，jsp动作元素在请求处理阶段起作用。jsp指令在转换为servlet时使用
+           用法:&lt;jsp:action_name attribute=&quot;value&quot;/&gt;
+
+           常用动作:
+           &lt;jsp:include page=&quot; &quot; flush=&quot;true&quot;/&gt;
+           &lt;jsp:useBean id=&quot;name&quot; class=&quot;&quot;/&gt;
+           &lt;jsp:setProperty name=&quot;&quot; property=&quot;&quot; value=&quot;&quot;/&gt;
+           &lt;jsp:getProperty name=&quot;&quot; property=&quot;&quot;/&gt;
+
+
+                    jsp内置九大对象
+          request、response、session、page、application、exception、config、pageContext、out
+
+          &lt;!DOCTYPE html&gt;声明使用的html版本,必须在html标签前声明
+          &lt;meta charset=&quot;utf-8&quot;&gt;在head和title标签之间进行声明,
+          提供文档字符集、使用语言、、作者等基本信息。
+
+
+                  jsp过滤器
+过滤器可以动态的拦截请求和响应,在客户端访问后端资源之前，拦截这些请求。在服务器的响应返回给客户端之前拦截响应。
+
+使用过程:
+1.创建过滤器类,实现javax.servlet.Filter接口。
+2.配置web.xml文件,&lt;filter&gt;&lt;/filter&gt;和&lt;filter-mapping&gt;&lt;/filter-mapping&gt;
+3.写servlet类
+</code></pre>
       
     </div>
     
@@ -332,15 +381,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/05/22/servlet知识总结/" rel="next" title="servlet知识总结">
+                <i class="fa fa-chevron-left"></i> servlet知识总结
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/05/17/firstblog/" rel="prev" title="firstblog">
-                firstblog <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -392,17 +441,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            Table of Contents
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            Overview
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -444,22 +484,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
